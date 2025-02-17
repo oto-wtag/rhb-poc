@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BellIcon from "@/assets/icons/bell-icon.svg";
 import HamburgerMenu from "@/assets/icons/hamburger-menu.svg";
+import NavbarCutout from "@/assets/icons/navbar-cutout.svg";
 import { Drawer } from "antd";
 import {
   termsAndPolicyIcon,
@@ -84,16 +85,21 @@ const Hamburger = () => {
 
 const Navbar = () => {
   return (
-    <nav className="px-3 md:px-0 h-16 container mx-auto flex items-center justify-between">
-      <img src="/rhb-logo.svg" className="w-28" alt="RhB Logo" />
-      <div className="flex space-x-4">
-        <img
-          src={BellIcon}
-          className="cursor-pointer"
-          alt="notification icon"
-        />
-        <Hamburger />
+    <nav className="fixed top-0 left-0 w-full h-16 z-50 flex">
+      <div className="absolute top-0 left-0 w-full flex justify-between items-center h-full px-6 md:px-12">
+        <img src="/rhb-logo.svg" className="w-28" alt="RhB Logo" />
+        <div className="flex space-x-4">
+          <img
+            src={BellIcon}
+            className="cursor-pointer"
+            alt="notification icon"
+          />
+          <Hamburger />
+        </div>
       </div>
+
+      <div className="bg-[#EB0A23] flex-1" />
+      <img src={NavbarCutout} className="" />
     </nav>
   );
 };

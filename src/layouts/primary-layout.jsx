@@ -5,7 +5,7 @@ import Footer from "@/components/footer";
 
 const PrimaryLayout = () => {
   return (
-    <div className="min-h-dvh flex flex-col">
+    <div className="relative min-h-dvh flex flex-col">
       <Navbar />
       <main className="bg-white h-full flex-1">
         <Outlet />

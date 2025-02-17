@@ -10,3 +10,7 @@
 .hamburger .ant-drawer-header {
   background: #eb0a23;
 }
+
+.mapboxgl-ctrl-group {
+  margin-top: 80px !important;
+}
