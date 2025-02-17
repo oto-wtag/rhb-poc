@@ -1,0 +1,12 @@
+.hamburger .ant-drawer-header-title {
+  flex-direction: row-reverse;
+  color: white;
+}
+
+.hamburger .anticon-close {
+  color: white;
+}
+
+.hamburger .ant-drawer-header {
+  background: #eb0a23;
+}
