@@ -3,6 +3,14 @@
   color: white;
 }
 
+.main-drawer .ant-drawer-header-title {
+  flex-direction: row-reverse;
+}
+
+.main-drawer .ant-drawer-content-wrapper {
+  height: calc(100dvh - (64px + 64px)) !important;
+}
+
 .hamburger .anticon-close {
   color: white;
 }
